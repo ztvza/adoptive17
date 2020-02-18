@@ -24,6 +24,11 @@ header a {
 .header__link {
 	margin-left: 15px;
 }
+
+.burger {
+	display: none;
+}
+
 @media screen and ( max-width: 1024px ) {
 
 	.header__container {
@@ -32,10 +37,28 @@ header a {
 	}
 }
 
-@media screen and ( max-width: 777px ) {
+@media screen and ( max-width: 767px ) {
  
 	.hero__actions {
 		margin-bottom: 30px; 
 	}
 
+	.header__nav {
+		display: none;
+	}
+
+	.burger {
+		display: inline-flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		width: 36px;
+		height: 30px;
+	}
+
+	.burger__item {
+		height: 2px;
+		background-color: white;
+		width: 33px;
+	}
 }

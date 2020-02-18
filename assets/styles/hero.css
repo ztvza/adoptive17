@@ -6,6 +6,10 @@
 	max-width: 400px;
 }
 
+.hero__actions {
+	display: flex;
+}
+
 .hero__title {
 	margin-bottom: 25px;
 	font-size: 80px;
@@ -31,4 +35,10 @@
 	}
 }
 
+@media screen and ( max-width: 767px ) {
 
+	.hero__title {
+		align-items: center;
+	}
+
+}
